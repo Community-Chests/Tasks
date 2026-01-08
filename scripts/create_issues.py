@@ -214,10 +214,8 @@ def main():
     skipped_count = 0
 
     for task_id, section_name, task_text in tasks:
-        if issue_exists(task_id):
-            print(f"SKIP (exists): {task_id} {task_text}")
-            skipped_count += 1
-            continue
+        # Duplicate check disabled (GitHub Search API can return 403)
+        # If you re-run later, consider adding a safer duplicate strategy.
 
         title = f"[{task_id}] {task_text}"
         body = (
@@ -232,14 +230,21 @@ def main():
         )
 
         result = create_issue(title, body, label)
+
         if result is None and DRY_RUN:
             created_count += 1
             continue
 
         content_node_id, number, url = result
         item_id = add_to_project(project_id, content_node_id)
+
         if item_id:
-            set_project_status(project_id, item_id, status_field, DEFAULT_PROJECT_STATUS)
+            set_project_status(
+                project_id,
+                item_id,
+                status_field,
+                DEFAULT_PROJECT_STATUS
+            )
 
         print(f"CREATED: #{number} {url}")
         created_count += 1
