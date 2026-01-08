@@ -1,0 +1,206 @@
+{
+  "meta": {
+    "source": "Technology Dept .docx",
+    "label": "tech",
+    "id_prefix": "TECH"
+  },
+  "sections": [
+    {
+      "name": "Purpose of This Domain",
+      "tasks": [
+        "Provide the **technical backbone** that supports governance, coordination, narrative, and participation",
+        "Enable systems to operate:",
+        "Transparently",
+        "Modularly",
+        "Without centralized control",
+        "Support **human coordination**, not replace it",
+        "Ensure that tools reinforce values rather than distort them"
+      ]
+    },
+    {
+      "name": "High-Level Goals",
+      "tasks": [
+        "Systems are:",
+        "Understandable",
+        "Composable (modular)",
+        "Transparent where needed",
+        "Privacy-respecting where needed",
+        "Tools can be swapped without collapse",
+        "Tasks can be executed without bottlenecking on one person",
+        "Technical complexity is hidden from newcomers but accessible to builders",
+        "Governance, agreements, and contributions can be tracked without coercion"
+      ]
+    },
+    {
+      "name": "1. System Architecture & Spine",
+      "tasks": [
+        "The conceptual “spine” that explains:",
+        "How platforms relate",
+        "What layer each tool belongs to",
+        "What is core vs optional",
+        "Clear separation between:",
+        "Coordination logic",
+        "Execution tools",
+        "Reference systems",
+        "Ability to swap tools without collapsing the system"
+      ]
+    },
+    {
+      "name": "2. Coordination & Decision Support Systems",
+      "tasks": [
+        "Tools that support:",
+        "Sense-making",
+        "Proposal development",
+        "Agreement tracking",
+        "Decision visibility",
+        "Systems that help groups:",
+        "See what’s happening",
+        "Understand why decisions were made",
+        "Participate appropriately without overload"
+      ]
+    },
+    {
+      "name": "3. Knowledge, Memory, and Reference Systems",
+      "tasks": [
+        "Canonical documents",
+        "Living references",
+        "Indexed knowledge",
+        "AI-accessible source material",
+        "Clear separation between:",
+        "Canon",
+        "Working drafts",
+        "Experiments",
+        "Historical record"
+      ]
+    },
+    {
+      "name": "4. AI Interfaces & Assistive Tools",
+      "tasks": [
+        "GPT-based tools used for:",
+        "Explanation",
+        "Exploration",
+        "Scenario testing",
+        "Clarification",
+        "Bots as:",
+        "Guides",
+        "Interpreters",
+        "Educators",
+        "NOT as:",
+        "Authorities",
+        "Decision-makers",
+        "Enforcers"
+      ]
+    },
+    {
+      "name": "5. Identity, Roles, and Participation Tracking",
+      "tasks": [
+        "Ways to represent:",
+        "People",
+        "Roles",
+        "Contributions",
+        "Participation states",
+        "Support for:",
+        "Multiple levels of involvement",
+        "Fluid role changes",
+        "Non-hierarchical contribution",
+        "Visibility without surveillance"
+      ]
+    },
+    {
+      "name": "6. Economic & Resource Tracking Interfaces",
+      "tasks": [
+        "Systems that can represent:",
+        "Contributions",
+        "Access rights",
+        "Resource flows",
+        "Commons-related data",
+        "Interfaces that allow:",
+        "Transparency",
+        "Accountability",
+        "Adaptation",
+        "Separation between:",
+        "Measurement",
+        "Allocation",
+        "Authority"
+      ]
+    },
+    {
+      "name": "7. Platform Integrations & Interoperability",
+      "tasks": [
+        "GitHub (execution, coordination)",
+        "Notion (orientation, reference)",
+        "Communication tools",
+        "Data storage",
+        "APIs and bridges between systems"
+      ]
+    },
+    {
+      "name": "8. Security, Resilience, and Failure Modes",
+      "tasks": [
+        "Designing for:",
+        "Partial failure",
+        "Human error",
+        "Tool loss",
+        "Ensuring:",
+        "No catastrophic collapse if one tool fails",
+        "Human processes can continue",
+        "Avoiding:",
+        "Hidden dependencies",
+        "Irreversible lock-in"
+      ]
+    },
+    {
+      "name": "Dependencies & Staging",
+      "tasks": [
+        "Not everything here can be built at once.",
+        "Some systems depend on others.",
+        "Some systems should remain conceptual until the underlying workflow is stable.",
+        "This domain should be staged in phases and built only when needed.",
+        "**Do not overbuild early.**"
+      ]
+    },
+    {
+      "name": "Relationship to Internal Workflow",
+      "tasks": [
+        "This domain supports the execution model:",
+        "Notion = orientation and summaries",
+        "GitHub = execution layer",
+        "Tasks become Issues",
+        "Work happens inside Issues",
+        "Status tracked via one Project board",
+        "Outputs summarized back into Notion",
+        "Tech systems must reinforce that model, not conflict with it.",
+        "Avoid duplicating work across tools.",
+        "Build bridges only when clarity exists.",
+        "Use automation only when it reduces human overhead."
+      ]
+    },
+    {
+      "name": "What Success Looks Like (At This Stage)",
+      "tasks": [
+        "A stable, readable tech spine map exists",
+        "A working task execution system exists (GitHub Issues + Project board)",
+        "Volunteers can enter and find tasks without confusion",
+        "Core documents are accessible through bots and/or indexed reference",
+        "The system can evolve without collapsing"
+      ]
+    },
+    {
+      "name": "Relationship to Other Domains",
+      "tasks": [
+        "This domain supports all other domains by providing infrastructure and clarity.",
+        "It must remain subordinate to governance and agreements.",
+        "It must not become an authority layer.",
+        "It exists to enable human coordination at scale."
+      ]
+    },
+    {
+      "name": "Summary",
+      "tasks": [
+        "Technology is not the mission.",
+        "Technology is the infrastructure that allows the mission to operate.",
+        "The goal is coherence, resilience, and human-centered coordination."
+      ]
+    }
+  ]
+}
