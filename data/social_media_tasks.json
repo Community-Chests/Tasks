@@ -1,0 +1,88 @@
+{
+  "meta": {
+    "source": "Social Media and Outreach.docx",
+    "label": "Social Media Tasks"
+    "id_prefix": "SM"
+  },
+  "sections": [
+    {
+      "name": "Narrative & Messaging Architecture",
+      "tasks": [
+        "Core story of the Global Development Plan",
+        "Relationship between: GDP, NEOS (as coordination overlay), Commons, stewardship, and transition framing",
+        "Language choices",
+        "Tone calibration (policy-facing, public-facing, practitioner-facing)",
+        "Consistency across platforms"
+      ]
+    },
+    {
+      "name": "Platform Presence (Current & Potential)",
+      "tasks": [
+        "Instagram",
+        "LinkedIn",
+        "Website / landing pages",
+        "Newsletter or email onboarding",
+        "Medium / long-form publishing",
+        "Video platforms (YouTube, Vimeo, etc.)",
+        "Community or discussion spaces",
+        "Deciding which platforms matter, when, and why (not default expansion)"
+      ]
+    },
+    {
+      "name": "Public Entry Flow Design",
+      "tasks": [
+        "Design the experience path: Social post → explainer → video → bot → form → next step",
+        "Where links point",
+        "What information appears first vs later",
+        "How much context is given at each step",
+        "How curiosity is supported without overload",
+        "Landing page structure",
+        "Orientation materials",
+        "Clear calls-to-explore (not calls-to-commit)"
+      ]
+    },
+    {
+      "name": "Interactive Learning & Exploration",
+      "tasks": [
+        "Integration of GPT-based bots as learning tools",
+        "Framing bots as: Exploratory, Question-based, Non-authoritative guides",
+        "Decide where bots are linked",
+        "Decide how bots are introduced",
+        "Decide what bots are meant to help people understand"
+      ]
+    },
+    {
+      "name": "Community Entry & Participation Pathways",
+      "tasks": [
+        "Contact forms",
+        "Interest expressions",
+        "Advocate or ambassador pathways",
+        "Working group awareness",
+        "Weekly calls or orientations",
+        "Soft onboarding (observation → participation)"
+      ]
+    },
+    {
+      "name": "Content Types That May Exist",
+      "tasks": [
+        "Short-form posts (concepts, framing, questions)",
+        "Long-form explanations",
+        "Visual explainers",
+        "Video narratives",
+        "FAQs and myth-busting",
+        "“How this is different” content",
+        "Clarifications around governance, money, and commons",
+        "Updates on progress or learning (when appropriate)"
+      ]
+    },
+    {
+      "name": "Readiness, Testing, and Phasing",
+      "tasks": [
+        "Determine what is: Private testing, Small-circle sharing, Semi-public, Public-facing",
+        "Decide when materials are ready to be shared widely",
+        "Run quiet tests before public release",
+        "Observe: Confusion points, Resonance, Misinterpretation risks"
+      ]
+    }
+  ]
+}
