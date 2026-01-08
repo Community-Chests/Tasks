@@ -1,79 +1,91 @@
 {
   "meta": {
-    "source": "System + Tech domain synthesis (Tasks repo)",
+    "source": "Tech Bot merge map.docx + Where spine and GDP mix.docx + System Dependencies Map.docx",
     "label": "tech",
     "id_prefix": "TECH"
   },
   "sections": [
     {
-      "name": "Repo + Automation Hardening",
+      "name": "GitHub Execution Layer Hardening",
       "tasks": [
-        "Confirm create_issues.py supports JSON_PATH override via environment variable (so tech/social/etc. can be generated without editing the script each time)",
-        "Add a safe re-run guard to create_issues.py that prevents duplicate issue creation without using GitHub Search API (e.g., maintain a local .state file of created IDs, or check existing project items via GraphQL pagination)",
-        "Add README section: 'How to generate issues from JSON' (DRY_RUN, JSON_PATH, PROJECT_STATUS) so volunteers can run it safely",
-        "Add one 'reference docs' folder (e.g., docs/) and move non-task documents there (orientation, dependency maps, overviews) so they are not accidentally treated as task lists"
+        "Add JSON_PATH override to create_issues.py so any domain JSON can be imported without editing the script",
+        "Verify PROJECT_STATUS override behavior and document the allowed Status values for Project #1",
+        "Implement a re-run safety mechanism that prevents duplicates without using GitHub Search API (e.g., a state file or GraphQL project-item check)",
+        "Add a docs/ folder for non-task reference material and keep data/*.json strictly for executable task imports",
+        "Add README instructions for running imports (DRY_RUN, JSON_PATH, PROJECT_STATUS) and avoiding duplicates",
+        "Define label standards and usage rules: tech vs tech-ai-specific vs social-media",
+        "Create project views/filters for Tech and Tech-AI-Specific (label-based) and verify cards appear correctly"
       ]
     },
     {
-      "name": "AI Brain Cleanup + Canonical Source-of-Truth Pipeline",
+      "name": "AI Brain Cleanup + Canonical Corpus",
       "tasks": [
-        "Inventory what currently counts as the 'Narrative Repository / AI Brain' and where it lives (Notion vs files vs both)",
-        "Create a cleanup checklist for the AI brain: duplicates, outdated drafts, conflicting definitions, missing canon links",
-        "Define a minimal 'canonical context bundle' for AI: SIR + governance summaries + GDP narrative + commons clarification",
-        "Implement a repeatable sync/export step that produces a clean corpus bundle for bots (manual or scripted; file-based or Notion-based)",
-        "Set a rule: volatile items (phases/next-steps) live outside SIR and are retrieved dynamically"
+        "Inventory all current source locations for bot knowledge (Notion spaces, repo files, other vault locations)",
+        "Define a canonical corpus bundle structure for bot ingestion (SIR, governance summaries, GDP narrative, commons clarification)",
+        "De-duplicate the corpus bundle and separate drafts from canon",
+        "Create a repeatable export/sync step to regenerate the corpus bundle from Notion and/or repo sources",
+        "Enforce a volatile-content rule: keep phases/next-steps outside SIR and store them in Notion or a planning database",
+        "Update canonical corpus language to frame NEOS as a coordination overlay (not a replacement for legal authority)",
+        "Add Cosmos vs Nexus distinction into the canonical corpus and ensure it is referenced by bots",
+        "Add commons clarification + stewardship framing into the canonical corpus used by GDP + NEOS bots"
       ]
     },
     {
-      "name": "Bot Merge Workstream (GDP + NEOS / Governance)",
+      "name": "Bot Merge Workstream (GDP + NEOS)",
       "tasks": [
-        "Update SIR first with NEOS + commons governance clarifications (confirm the merge prerequisites are met)",
-        "Create the unified canonical context set (SIR + governance summaries + GDP narrative + commons clarification)",
-        "Merge at the knowledge layer (point both bots to the same SIR + canonical narratives) rather than merging UIs/personalities",
-        "Establish a single 'Guide' identity naming convention (NEOS Guide / Commons Transition Guide / Solutionary Guide)",
-        "Run the validation check questions against the merged bot output (who governs commons, ownership change, adoption mandatory, who decides locally)"
+        "Confirm SIR contains merge prerequisites (NEOS definition, commons clarification, stewardship framing, Cosmos vs Nexus distinction)",
+        "Build a unified context bundle for the merged bot: SIR + governance summaries + GDP narrative + commons clarification",
+        "Choose the merge approach: shared RAG corpus vs Notion-linked knowledge root (record decision + rationale)",
+        "Point both bots to the unified context bundle (knowledge-layer merge, not UI/persona merge)",
+        "Standardize a single Guide naming convention for the merged experience and apply across materials",
+        "Create a validation question set and run it against merged outputs (commons governance, ownership change, local choice, coercion framing)",
+        "Log known bot failure modes and patch the corpus bundle with approved additions"
       ]
     },
     {
-      "name": "Public Entry Flow Tech (Video → Bot → Form → Next Step)",
+      "name": "Public Entry Flow Tech (Video → Bot → Form → Next)",
       "tasks": [
-        "Create a minimal public entry stack plan: where the video lives, where the bot links live, where the form lives, and where the 'next step' routes",
-        "Stand up a simple landing page (or existing page) that links: video + bot(s) + contact form + orientation hub",
-        "Implement contact form capture (email + intent + optional skills) and define where submissions route (email + GitHub intake + Notion summary)",
-        "Define a 'small-circle testing' release mode (share by link, not public broadcast) and implement toggles/notes for readiness"
+        "Decide the minimal public entry stack components (video host, landing page, bot links, contact form, next-step routing)",
+        "Create/confirm a single landing page URL for small-circle testing (not public blast) linking: video + bots + contact form + orientation hub",
+        "Implement contact form capture (name/email/interest/skills) and define storage + notification routing",
+        "Create an intake-to-triage workflow (form submission → GitHub intake issue or inbox → weekly call queue)",
+        "Add a readiness toggle/note system for materials (private test vs share-by-link vs public) and apply it to the landing page"
       ]
     },
     {
       "name": "CPS + Charting the Course Technical Coordination",
       "tasks": [
-        "Inventory the current CPS toolset (Notion / Heartbeat / SIMBI/Symbi) and document where each part lives and what it does",
-        "Inventory 'Charting the Course' assets and clarify what is active now vs planned later (as a system list, not SIR)",
-        "Define the intended merge path: CPS + Charting the Course into a unified profile/matching application (high-level architecture + data needs)",
+        "Inventory CPS components in use now (Notion, Heartbeat, Symbi/SIMBI, website/landing) and document current state",
+        "Inventory Charting the Course assets and define what is active now vs planned later (system list, not SIR)",
+        "Define the merge path concept for CPS + Charting the Course into a unified profile/matching app (high-level architecture only)",
         "Identify immediate integration points (links, shared profiles, shared onboarding pathways) without building the full app yet"
       ]
     },
     {
-      "name": "BEAM Bots Readiness (Finish-to-Ready)",
+      "name": "BEAM Bots Finish-to-Ready",
       "tasks": [
-        "Inventory current BEAM bot assets (prompts, scoring logic, comparison flows)",
-        "Create a 'finish-to-ready' checklist for BEAM bots (what is missing, what must be tested, what is considered ready)",
-        "Package BEAM bot usage as a repeatable workflow (inputs, outputs, storage location, and how results are summarized back to Notion)"
+        "Inventory existing BEAM bot assets (prompts, scoring logic, comparison flow outputs)",
+        "Create a finish-to-ready checklist for BEAM bots (what is missing, what must be tested, what is considered ready)",
+        "Package BEAM bot usage into a repeatable workflow (inputs, outputs, storage location, summary location)",
+        "Create a placeholder plan for BEAM 3 government-facing layer (registered, not active)"
       ]
     },
     {
-      "name": "Security + Multi-Sig + Ops Basics",
+      "name": "Security + Ops",
       "tasks": [
-        "Define where secrets/tokens live (who holds them, rotation policy, and what is allowed to be stored where)",
-        "Document the multi-sig process requirements for keys/funds (what is needed now vs later)",
-        "Create a lightweight incident/rollback procedure for: mistaken public posts, bad data imports, accidental issue floods, token exposure"
+        "Define where secrets/tokens live (owners, rotation policy, and what can be stored where)",
+        "Create a token exposure response checklist (revoke, rotate, verify, document)",
+        "Document multi-sig requirements for keys/funds (now vs later) and where documentation lives",
+        "Add a rollback procedure for accidental issue floods (bulk close/label, prevention steps)"
       ]
     },
     {
       "name": "Volunteer Tech Onboarding (Lightweight)",
       "tasks": [
-        "Create a 1-page 'How to contribute in GitHub' orientation (issues, project board, labels, status) for non-technical volunteers",
-        "Create a 'proposal template' for volunteers to claim tasks (what they plan to do, dependencies, what they need, expected output)",
-        "Define a handoff standard for work completion (what gets summarized back to Notion, what goes into docs, what stays in GitHub)"
+        "Create a 1-page GitHub orientation for non-technical contributors and link it from README",
+        "Create a proposal template for volunteers to claim tasks (scope, dependencies, resources needed, expected output)",
+        "Define a handoff standard (what gets summarized back to Notion vs what stays in GitHub vs what becomes canonical)",
+        "Create an onboarding checklist for new tech helpers (access, tools, where to ask questions, weekly call expectations)"
       ]
     }
   ]
